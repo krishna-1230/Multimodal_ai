@@ -1,0 +1,4 @@
+Flask
+htmldocx
+python-docx
+beautifulsoup4

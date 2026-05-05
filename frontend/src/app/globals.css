@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/* Base resets */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+
+:root {
+  --neon: 56 189 248; /* electric-400 */
+  --primary: 59 130 246; /* primary-500 */
+}
+
+::selection {
+  background: rgba(56,189,248,0.25);
+  color: white;
+}
+
+/* Glassmorphism helpers */
+.glass {
+  @apply backdrop-blur-md border border-slate-800/60 shadow-xl;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.neon-text {
+  text-shadow: 0 0 12px rgba(var(--neon) / 0.6), 0 0 24px rgba(var(--neon) / 0.35);
+}
+
+.neon-ring {
+  box-shadow: 0 0 0 1px rgba(var(--neon) / 0.3), inset 0 0 20px rgba(var(--neon) / 0.15), 0 0 24px rgba(var(--neon) / 0.25);
+}
+
+.btn-neon {
+  @apply relative overflow-hidden rounded-lg px-4 py-2 font-medium text-white transition;
+  background: linear-gradient(135deg, rgba(59,130,246,0.2), rgba(14,165,233,0.2));
+  border: 1px solid rgba(56,189,248,0.35);
+}
+
+.btn-neon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(120px 120px at var(--mouse-x,50%) var(--mouse-y,50%), rgba(56,189,248,0.25), transparent 60%);
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+
+.btn-neon:hover::before { opacity: 1; }
+.btn-neon:hover { box-shadow: 0 0 32px rgba(56,189,248,0.25); }
+
+/* Card hover glow */
+.card-glow {
+  position: relative;
+}
+.card-glow::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 1rem;
+  background: radial-gradient(300px 200px at var(--mouse-x,50%) var(--mouse-y,50%), rgba(56,189,248,0.14), transparent 60%);
+  pointer-events: none;
+}
+
+
+/* Styled select for dark theme */
+.neon-select {
+  /* tailwind utilities via @apply (only utilities, not custom classes) */
+  @apply border rounded-lg px-3 py-2 text-slate-100 outline-none;
+  background-color: rgba(0, 0, 0, 0.40);
+  border-color: rgba(30, 41, 59, 0.6);
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%2388c0ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 0.65rem center;
+  background-size: 14px;
+  padding-right: 2.2rem;
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.14) inset;
+}
+
+.neon-select:focus {
+  border-color: rgba(14, 165, 233, 0.40);
+  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.25);
+}
+
+.neon-select option {
+  background-color: #0b0e13;
+  color: #e5e7eb;
+}
+
+

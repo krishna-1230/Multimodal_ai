@@ -1,0 +1,18 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./backend:/app
+      - go-mod-cache:/go/pkg/mod
+      - go-build-cache:/root/.cache/go-build
+    ports:
+      - "1234:1234"
+    environment:
+      - GO_ENV=development
+    command: air -c .air.toml
+
+volumes:
+  go-mod-cache:
+  go-build-cache:

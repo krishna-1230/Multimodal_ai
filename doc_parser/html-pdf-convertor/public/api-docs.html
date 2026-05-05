@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML to PDF API Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .endpoint {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-left: 4px solid #2196F3;
+            background-color: #f9f9f9;
+        }
+        .method {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 3px;
+            color: white;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .post {
+            background-color: #4CAF50;
+        }
+        .get {
+            background-color: #2196F3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .response-example {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML to PDF API Documentation</h1>
+        
+        <section>
+            <h2>Introduction</h2>
+            <p>
+                This API allows you to convert HTML content to PDF and optionally upload it to Google Drive.
+                The service provides two main endpoints: one for direct PDF conversion and another for conversion with Google Drive upload.
+            </p>
+        </section>
+
+        <section>
+            <h2>Authentication</h2>
+            <p>
+                No authentication is required for the basic conversion endpoint. 
+                For the Google Drive upload endpoint, the server uses pre-configured Google API credentials.
+            </p>
+        </section>
+
+        <section>
+            <h2>Endpoints</h2>
+            
+            <div class="endpoint">
+                <h3><span class="method post">POST</span> /convert</h3>
+                <p>Converts HTML content to PDF and returns the PDF file directly in the response.</p>
+                
+                <h4>Request Body</h4>
+                <table>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Required</th>
+                    </tr>
+                    <tr>
+                        <td>html</td>
+                        <td>string</td>
+                        <td>The HTML content to convert to PDF</td>
+                        <td>Yes</td>
+                    </tr>
+                </table>
+                
+                <h4>Example Request</h4>
+                <pre><code>
+POST /convert
+Content-Type: application/json
+
+{
+    "html": "&lt;h1&gt;Hello World&lt;/h1&gt;&lt;p&gt;This is a sample HTML content.&lt;/p&gt;"
+}
+                </code></pre>
+                
+                <h4>Response</h4>
+                <p>Returns the PDF file with Content-Type: application/pdf</p>
+            </div>
+            
+            <div class="endpoint">
+                <h3><span class="method post">POST</span> /api/convert-local</h3>
+                <p>Converts HTML content to PDF and saves it locally on the server, returning a direct download URL. Ideal for n8n integration.</p>
+                
+                <h4>Request Body</h4>
+                <table>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Required</th>
+                    </tr>
+                    <tr>
+                        <td>html</td>
+                        <td>string</td>
+                        <td>The HTML content to convert to PDF</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>fileName</td>
+                        <td>string</td>
+                        <td>Name for the PDF file (defaults to timestamp-based name)</td>
+                        <td>No</td>
+                    </tr>
+                </table>
+                
+                <h4>Example Request</h4>
+                <pre><code>
+POST /api/convert-local
+Content-Type: application/json
+
+{
+    "html": "&lt;h1&gt;Hello World&lt;/h1&gt;&lt;p&gt;This is a sample HTML content.&lt;/p&gt;",
+    "fileName": "my-document.pdf"
+}
+                </code></pre>
+                
+                <h4>Response</h4>
+                <div class="response-example">
+                    <p>Success Response (200 OK):</p>
+                    <pre><code>
+{
+    "success": true,
+    "file": {
+        "name": "abc123-my-document.pdf",
+        "path": "/path/to/public/uploads/abc123-my-document.pdf",
+        "downloadUrl": "http://localhost:3000/uploads/abc123-my-document.pdf"
+    }
+}
+                    </code></pre>
+                </div>
+                
+                <div class="response-example">
+                    <p>Error Response (400 Bad Request):</p>
+                    <pre><code>
+{
+    "success": false,
+    "message": "HTML content is required"
+}
+                    </code></pre>
+                </div>
+                
+                <div class="response-example">
+                    <p>Error Response (500 Internal Server Error):</p>
+                    <pre><code>
+{
+    "success": false,
+    "message": "Error converting and saving PDF",
+    "error": "Error details here"
+}
+                    </code></pre>
+                </div>
+            </div>
+
+            <div class="endpoint">
+                <h3><span class="method post">POST</span> /api/convert-and-upload</h3>
+                <p>Converts HTML content to PDF and uploads it to Google Drive, returning links to access the file.</p>
+                
+                <h4>Request Body</h4>
+                <table>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Required</th>
+                    </tr>
+                    <tr>
+                        <td>html</td>
+                        <td>string</td>
+                        <td>The HTML content to convert to PDF</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>fileName</td>
+                        <td>string</td>
+                        <td>Name for the PDF file in Google Drive (defaults to timestamp-based name)</td>
+                        <td>No</td>
+                    </tr>
+                </table>
+                
+                <h4>Example Request</h4>
+                <pre><code>
+POST /api/convert-and-upload
+Content-Type: application/json
+
+{
+    "html": "&lt;h1&gt;Hello World&lt;/h1&gt;&lt;p&gt;This is a sample HTML content.&lt;/p&gt;",
+    "fileName": "my-document.pdf"
+}
+                </code></pre>
+                
+                <h4>Response</h4>
+                <div class="response-example">
+                    <p>Success Response (200 OK):</p>
+                    <pre><code>
+{
+    "success": true,
+    "file": {
+        "id": "1aBcDeFgHiJkLmNoPqRsTuVwXyZ",
+        "name": "my-document.pdf",
+        "viewLink": "https://drive.google.com/file/d/1aBcDeFgHiJkLmNoPqRsTuVwXyZ/view",
+        "downloadLink": "https://drive.google.com/uc?id=1aBcDeFgHiJkLmNoPqRsTuVwXyZ&export=download"
+    }
+}
+                    </code></pre>
+                </div>
+                
+                <div class="response-example">
+                    <p>Error Response (400 Bad Request):</p>
+                    <pre><code>
+{
+    "success": false,
+    "message": "HTML content is required"
+}
+                    </code></pre>
+                </div>
+                
+                <div class="response-example">
+                    <p>Error Response (500 Internal Server Error):</p>
+                    <pre><code>
+{
+    "success": false,
+    "message": "Error converting and uploading PDF",
+    "error": "Error details here"
+}
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Setup Requirements</h2>
+            <p>
+                To use the Google Drive upload functionality, you need to:
+            </p>
+            <ol>
+                <li>Create a Google Cloud project and enable the Google Drive API</li>
+                <li>Create OAuth 2.0 credentials (client ID and client secret)</li>
+                <li>Obtain a refresh token for your Google account</li>
+                <li>Configure these credentials in the config.env file</li>
+            </ol>
+            <p>
+                For more information on setting up Google Drive API, refer to the 
+                <a href="https://developers.google.com/drive/api/v3/quickstart/nodejs" target="_blank">Google Drive API documentation</a>.
+            </p>
+        </section>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,15 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app               # Mount source code
+      - /app/node_modules    # Keep node_modules inside container
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+
+
+

@@ -1,0 +1,7 @@
+# Ignore virtual environments
+gpu/venv
+cpu/venv
+
+# Optionally ignore __pycache__ and .pyc files
+**/__pycache__/
+*.pyc

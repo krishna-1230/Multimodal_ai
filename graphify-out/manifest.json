@@ -1,0 +1,670 @@
+{
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\main.go": {
+    "mtime": 1775891756.0477123,
+    "hash": "5f2219ee848a75ecf672b7faadb25188"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\controllers\\agent_chat.go": {
+    "mtime": 1776481896.6782243,
+    "hash": "ec29f845969e159cec9279b395a46ac8"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\controllers\\agent_conversation.go": {
+    "mtime": 1775891077.8834257,
+    "hash": "40647baa8883aa85cfdfbf7ef4200271"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\controllers\\auth.go": {
+    "mtime": 1775891077.8739274,
+    "hash": "3dea257ff31b6d6d8774a00b0f37ecf1"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\controllers\\chat.go": {
+    "mtime": 1775891077.8744261,
+    "hash": "0f10faa22b403fbf2346c5b0649b3454"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\controllers\\conversation.go": {
+    "mtime": 1775891077.8824265,
+    "hash": "543f35d4a3e46a41ca5582ce29b06d74"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\controllers\\library.go": {
+    "mtime": 1775891077.8754258,
+    "hash": "5f461946e64b378dd7d0af40e66e7a5c"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\controllers\\mcp.go": {
+    "mtime": 1775891077.8824265,
+    "hash": "2a99b51a6134a9e0440e1164fa7e690f"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\controllers\\me.go": {
+    "mtime": 1775891077.8824265,
+    "hash": "adc703fe41c09e38abc7e95219a99577"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\controllers\\n8n.go": {
+    "mtime": 1776481896.6762211,
+    "hash": "2e8fa18331938100f353af44fcdf4f05"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\controllers\\rag.go": {
+    "mtime": 1756572330.7381053,
+    "hash": "78c95f591566f95187b65c42749a21a7"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\controllers\\speech.go": {
+    "mtime": 1775891077.8834257,
+    "hash": "007abf4e4a03232562c1ee5ad2c6dee9"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\database\\connection.go": {
+    "mtime": 1775891077.8664117,
+    "hash": "46a5e3b9781b4846f734552e0ff87a03"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\middleware\\admin.go": {
+    "mtime": 1759936253.9979138,
+    "hash": "9dac7b9a4d7239af68debe75fb77021c"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\middleware\\cors.go": {
+    "mtime": 1775891077.8664117,
+    "hash": "c679097b312c997f3ecba89da915451f"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\middleware\\jwt.go": {
+    "mtime": 1752670125.5862439,
+    "hash": "421de8644ae685412df3f402155e6242"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\middleware\\logger.go": {
+    "mtime": 1754833173.894234,
+    "hash": "d4683434a14a39e92310f5beef341821"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\models\\agent_chat.go": {
+    "mtime": 1759022524.2993581,
+    "hash": "062f4386c4b171eb349646ae33bb67a6"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\models\\agent_conversation.go": {
+    "mtime": 1759020163.6833138,
+    "hash": "0f7e87ad53294efd1322c27d0b406e99"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\models\\conversation.go": {
+    "mtime": 1758553800.684165,
+    "hash": "63f297ac8878e2218440fa7ddcf85202"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\models\\library.go": {
+    "mtime": 1754946100.592743,
+    "hash": "89ffed2d4ab08d55ef9a5072d382a1b6"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\models\\mcp.go": {
+    "mtime": 1758851296.0482051,
+    "hash": "988907d14a27e99e709a5ecd7761e896"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\models\\media.go": {
+    "mtime": 1754763236.3851552,
+    "hash": "a4c43e935b55166ef3f6fc6877da6143"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\models\\message.go": {
+    "mtime": 1758553800.6891978,
+    "hash": "00817a216aeaa1b2f07986a0da669ee4"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\models\\migrate.go": {
+    "mtime": 1759017487.6169734,
+    "hash": "e999cbe80815a981362857b4f9a5f28c"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\models\\rag.go": {
+    "mtime": 1758553800.6891978,
+    "hash": "6ca5c351e75102089a8b32415d68927e"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\models\\user.go": {
+    "mtime": 1775891077.8664117,
+    "hash": "13f554c35fb2878d3c846c39cd31b2ca"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\routes\\routes.go": {
+    "mtime": 1776481896.6782243,
+    "hash": "4f8acaa83987f8965828caf50f46e131"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\services\\agentmemory.go": {
+    "mtime": 1759017489.6356962,
+    "hash": "3dde57b4b189618dd6d2a868a5f51c3b"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\services\\chatmemory.go": {
+    "mtime": 1758554630.1534226,
+    "hash": "e375c1c7b00bc143cbe19aa56a04c094"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\services\\gemini.go": {
+    "mtime": 1756574353.2377062,
+    "hash": "342450cdc02c9810614f9be440e31f4d"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\services\\ragclient.go": {
+    "mtime": 1775891077.8739274,
+    "hash": "e6cdabb027c9b5294a2f5c99ba93f6c6"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\utils\\jwt.go": {
+    "mtime": 1752671481.536323,
+    "hash": "48fb8e6a4c870bbb91bce8f8ebec83cd"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\utils\\logger.go": {
+    "mtime": 1753976346.8401906,
+    "hash": "98a80b85b8561e25ec29b0a71deaa7bb"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\main.py": {
+    "mtime": 1776707717.1943245,
+    "hash": "90a306acf9b4cc2e95dfd752032e6be3"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\game\\js\\car-game.js": {
+    "mtime": 1777133644.4604893,
+    "hash": "b5a643428331cb416c5f8514dab41458"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\game\\js\\flight-sim.js": {
+    "mtime": 1777133644.4604893,
+    "hash": "18c9104483b66c76e1488c9c638ede88"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\game\\js\\notepad.js": {
+    "mtime": 1777127185.0186112,
+    "hash": "7ec5170a88e3b5880b5e3fd58bce2fad"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\game\\js\\os.js": {
+    "mtime": 1777133644.4604893,
+    "hash": "50f97d8fa8a52b927406d9cf6414dbb2"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\game\\js\\snake.js": {
+    "mtime": 1777127185.0186112,
+    "hash": "327ce6515ea2dc7c3c86617bd2332475"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\grag\\README.ps1": {
+    "mtime": 1776477368.3489077,
+    "hash": "ea164f2bac6aaa7a222a35eb37e06b20"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\grag\\common\\condense.py": {
+    "mtime": 1757039609.9248042,
+    "hash": "cb16d0c1aebcc72fb38263d7c9118488"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\grag\\common\\config.py": {
+    "mtime": 1756554149.208806,
+    "hash": "b27b203ae9c558830ee561fc69be3edb"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\grag\\cpu\\app.py": {
+    "mtime": 1757039609.9248042,
+    "hash": "801e98870eda9c9e9f62ad1fc87feb08"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\grag\\cpu\\README.ps1": {
+    "mtime": 1756549031.5816472,
+    "hash": "8ecb3b04af59e21bbc145244ee00d1f0"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\grag\\gpu\\app.py": {
+    "mtime": 1776477367.9766989,
+    "hash": "b643f0137176803a3de118d682835312"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\grag\\gpu\\README.ps1": {
+    "mtime": 1776477368.4744897,
+    "hash": "258d573b86a6913824d4635b83e85136"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\RAG\\cpu_rag\\app.py": {
+    "mtime": 1756568655.5500827,
+    "hash": "e4595b04bc1ee38c23718ddc70585180"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\RAG\\cpu_rag\\chroma_viewer.py": {
+    "mtime": 1752722887.8130562,
+    "hash": "c413de36bd8b6432424b4a4c0534d1e7"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\RAG\\cpu_rag\\document_processor.py": {
+    "mtime": 1756825446.0068612,
+    "hash": "36ccfe95d030c4f3bd23744fc0546975"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\RAG\\cpu_rag\\rag_engine.py": {
+    "mtime": 1756826571.0930686,
+    "hash": "1d8b16c32917332a84710efa7a166501"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\RAG\\cpu_rag\\upload_workflows.py": {
+    "mtime": 1753864815.8353708,
+    "hash": "b95eb062d3982856e14c63aaf89bd261"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\RAG\\gpu_rag\\app.py": {
+    "mtime": 1777126263.102579,
+    "hash": "86691b8ea425864c69c4c556dd7def62"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\RAG\\gpu_rag\\chroma_viewer.py": {
+    "mtime": 1752722887.8130562,
+    "hash": "c413de36bd8b6432424b4a4c0534d1e7"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\RAG\\gpu_rag\\document_processor.py": {
+    "mtime": 1776481678.8697977,
+    "hash": "618de8c630adbe23e7a44ea770d41050"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\RAG\\gpu_rag\\gpu_optimizer.py": {
+    "mtime": 1776470686.0650344,
+    "hash": "7d38acb5247bb48e70a660aa753ddfe2"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\RAG\\gpu_rag\\rag_engine.py": {
+    "mtime": 1777126263.1020792,
+    "hash": "d0e0c0670b0bdb28e5a0361ec89f16d7"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\RAG\\gpu_rag\\upload_workflows.py": {
+    "mtime": 1753864815.8353708,
+    "hash": "b95eb062d3982856e14c63aaf89bd261"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\docx-converter\\app.py": {
+    "mtime": 1758436953.6171765,
+    "hash": "a9fb6c27f1025f59b5533b163ae6331e"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\convert-cli.js": {
+    "mtime": 1752237484.5614173,
+    "hash": "f4846ebefb26be6418e59dc3030d04d7"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\drive-service.js": {
+    "mtime": 1752238173.118477,
+    "hash": "74a25b513b6a57ad35dda804ed718d49"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\index.js": {
+    "mtime": 1775923577.898243,
+    "hash": "c2ddfe7756923318471f25ac8250d134"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\test-api.js": {
+    "mtime": 1752239734.8055637,
+    "hash": "5249303b2a4c09d3fd9eaab3493cd15d"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\pptx-converter\\app.py": {
+    "mtime": 1755151495.770676,
+    "hash": "758491c5f804f3930140e2d2f2cce08a"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\next.config.mjs": {
+    "mtime": 1754766409.3966274,
+    "hash": "21958f5752add43cc47ab0ff5172cd46"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\postcss.config.mjs": {
+    "mtime": 1754762370.8164625,
+    "hash": "675899342e765a4d16acd75a53389101"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\tailwind.config.js": {
+    "mtime": 1754798831.1271784,
+    "hash": "faaa1609b06b859a3092081b1366a556"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\src\\app\\layout.jsx": {
+    "mtime": 1754838146.7121,
+    "hash": "30ecdc1eb83db7ed257fadd494f414d9"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\src\\app\\page.jsx": {
+    "mtime": 1776477077.6403968,
+    "hash": "f78cd9d77f088f91d21df963c15e4d9b"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\src\\app\\agentChats\\page.jsx": {
+    "mtime": 1776481896.6667209,
+    "hash": "2476860f663585653336f1aaabdb3d8b"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\src\\app\\chat\\page.jsx": {
+    "mtime": 1775895808.1105182,
+    "hash": "698903f4ed11617942b457bcc38a8184"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\src\\app\\deep-research\\page.jsx": {
+    "mtime": 1776454722.861401,
+    "hash": "87c3aeaf8aead1c991c5121770f928d3"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\src\\app\\flux\\page.jsx": {
+    "mtime": 1776481896.6652212,
+    "hash": "b58897d37b449176c7ee290db727705b"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\src\\app\\flux_kontext\\page.jsx": {
+    "mtime": 1776481896.6662202,
+    "hash": "cff88ac3bfc629aa77e6b1761e3c6a04"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\src\\app\\library\\page.jsx": {
+    "mtime": 1776481896.6667209,
+    "hash": "9155e5b290197417ea6ac093ae6a5d2c"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\src\\app\\login\\page.jsx": {
+    "mtime": 1775895808.1100185,
+    "hash": "b707932529b4eed8f21e27e7afcdb553"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\src\\app\\music-gen\\page.jsx": {
+    "mtime": 1776481896.66872,
+    "hash": "991d71b5a36a67dec22d328db4c88af8"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\src\\app\\profile\\page.jsx": {
+    "mtime": 1776481896.6662202,
+    "hash": "175a8ff4f1264d6c54178f1a8805158d"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\src\\app\\rag\\page.jsx": {
+    "mtime": 1758573317.5181987,
+    "hash": "9f13c0be4120e0538d8c2ac4c7a9bac5"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\src\\app\\sdxl\\page.jsx": {
+    "mtime": 1776481896.6682205,
+    "hash": "468aea6ab34b95407239203c7403eab0"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\src\\app\\signup\\page.jsx": {
+    "mtime": 1775895808.1105182,
+    "hash": "04a283a60c06b65facc25feb146eff5d"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\src\\app\\video-gen\\page.jsx": {
+    "mtime": 1776481896.6692207,
+    "hash": "a478e71a5b074e50651023aa52a811ff"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\src\\app\\voice-gen\\page.jsx": {
+    "mtime": 1776481896.66872,
+    "hash": "35b56dc0187f83d4a55307f58ed5ef87"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\src\\components\\AuthGuard.jsx": {
+    "mtime": 1775891077.0527494,
+    "hash": "5afedd54d7f51dce4522e0164a791951"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\src\\components\\CursorGlow.jsx": {
+    "mtime": 1754827315.1647096,
+    "hash": "409ddcb09796b66b4320a6942aaf5847"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\src\\components\\MessageBubble.jsx": {
+    "mtime": 1776481896.6667209,
+    "hash": "e73c5ee174bc044ec7a6eb026e7be31a"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\src\\components\\NavBar.jsx": {
+    "mtime": 1775896423.154462,
+    "hash": "691a538737ddf637673519dca69a45d3"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\src\\components\\ParticlesBackground.jsx": {
+    "mtime": 1754827315.1647096,
+    "hash": "405c48ca1a97459792fc6d5e624f384d"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\src\\components\\Sidebar.jsx": {
+    "mtime": 1775896423.160463,
+    "hash": "ae201a69a91e18293017a85ac15f51e5"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\src\\hooks\\useAuth.js": {
+    "mtime": 1775891077.0522485,
+    "hash": "ce67e6ff7e323f1c50301a8ed9627304"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\src\\lib\\media.js": {
+    "mtime": 1776481896.6667209,
+    "hash": "b641d38298f4e208b003f53c1835a02e"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\notion_mcp\\server.py": {
+    "mtime": 1776480610.6805859,
+    "hash": "46fa72a4d33485c51b3ae3f15375c039"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\README.md": {
+    "mtime": 1778005074.8733795,
+    "hash": "4b213e7077c9e375f1e4c3b4a8030ae9"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\compose.yaml": {
+    "mtime": 1755482052.403524,
+    "hash": "9cb23efdb47591002af9184f03f7e59f"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\backend\\README.Docker.md": {
+    "mtime": 1756572030.7060144,
+    "hash": "542f1cd8e4779449725add38d394d81c"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\requirements.txt": {
+    "mtime": 1776477431.9647365,
+    "hash": "8d60ed83f039cc11e088aaa254d562c5"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\game\\index.html": {
+    "mtime": 1777127185.0172648,
+    "hash": "3744888f6091c12b815a434d39bf38ae"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\grag\\api.md": {
+    "mtime": 1764556989.647121,
+    "hash": "6475c00fcb7c72038e91e9df41ed4cd3"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\grag\\requirements.txt": {
+    "mtime": 1758785586.1747303,
+    "hash": "fe76e769d1188a3cff46402988b10b36"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\grag\\cpu\\requirements.txt": {
+    "mtime": 1756998017.213483,
+    "hash": "fba268253ad90aeb1cc8c8badc7b1ee4"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\grag\\gpu\\requirements.txt": {
+    "mtime": 1758785666.4838862,
+    "hash": "8b7471fdf605793cc2a10ed0e94e3d54"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\RAG\\cpu_rag\\README.md": {
+    "mtime": 1755186191.4406774,
+    "hash": "e677f5d499800df78e3247710098381b"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\RAG\\cpu_rag\\requirements.txt": {
+    "mtime": 1756568655.5490828,
+    "hash": "e5e59a4744c0895ca90030e2bc72ce0e"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\RAG\\gpu_rag\\API.md": {
+    "mtime": 1776470686.0650344,
+    "hash": "fdbd34d42e47aa7e4e67500204cdae7d"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\RAG\\gpu_rag\\README.md": {
+    "mtime": 1776470686.0650344,
+    "hash": "7a3f9d54c422cf6fdd472ab6bf088119"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\RAG\\gpu_rag\\requirement.txt": {
+    "mtime": 1776477211.5189404,
+    "hash": "8d2273867345bdc8cb6e128bec586f7a"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\chroma\\RAG\\gpu_rag\\requirements.txt": {
+    "mtime": 1776503728.0842867,
+    "hash": "6b165f70db9a1411b2c267d6409cb15e"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\api.md": {
+    "mtime": 1755151495.770676,
+    "hash": "888f9768a088d308318ea0f1557a0f69"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\README.md": {
+    "mtime": 1753719986.6297495,
+    "hash": "0e8fb2e90769e204f1bf434aa7150ca7"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\docx-converter\\README.md": {
+    "mtime": 1753808437.366869,
+    "hash": "89318ad55abd72d69168986058391896"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\docx-converter\\requirements.txt": {
+    "mtime": 1753807449.6272497,
+    "hash": "915d8eefef81ac2ffe77c8104ab91642"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\docx-converter\\sample.txt": {
+    "mtime": 1753807639.8374743,
+    "hash": "2e0021ec3a1c5fb120a58ab99cd9488b"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\graphify-out\\converted\\6275daa9-c527-4a95-ac01-16d02adf892d_ad961f83.md": {
+    "mtime": 1778005384.602133,
+    "hash": "efdd719ddf6f26589614997bad68c47d"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\graphify-out\\converted\\99c73361-a20e-433c-962a-6ede3a97cc70_44e6a82f.md": {
+    "mtime": 1778005384.6286638,
+    "hash": "b7711080352cd3fe3bd6a6317b1b1268"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\graphify-out\\converted\\b7cd2b16-9469-4839-9cf0-c14877daa7af_fb87b328.md": {
+    "mtime": 1778005384.6581936,
+    "hash": "89e39de1b59c5b0d21a49e51f162ae2d"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\graphify-out\\converted\\b956fcc4-1d6f-43b8-a9a1-a7e85e5d843b_29839ff8.md": {
+    "mtime": 1778005384.685229,
+    "hash": "669691b91fca882b693b2d2d8ba2bcdc"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\graphify-out\\converted\\c1fc50ab-df5c-4504-87d8-b2da251a5eee_d3eeca40.md": {
+    "mtime": 1778005384.7262652,
+    "hash": "3cd2544e6fbffb940a8d5a4306765201"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\api.md": {
+    "mtime": 1758391591.5353456,
+    "hash": "656fb3101dc85da8ee167a5b82c4ba47"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\README.md": {
+    "mtime": 1752239754.3354738,
+    "hash": "59626b6f2288a92135be8056c94a954c"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\sample.html": {
+    "mtime": 1752237513.385596,
+    "hash": "1640d2519e5a5b05205d50846aa0ff8f"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\api-docs.html": {
+    "mtime": 1752239716.6599667,
+    "hash": "899c97363b93ec1f1fdb10bd8bb4a2ce"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\index.html": {
+    "mtime": 1752239684.0902205,
+    "hash": "22936bba1296d2c1699db57901e4ba58"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\pptx-converter\\README.md": {
+    "mtime": 1753806380.0456095,
+    "hash": "596eac38f9df6cdcf257d787fc581cfd"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\pptx-converter\\requirements.txt": {
+    "mtime": 1753717984.299683,
+    "hash": "c2ad04025443e1b464a23b5eb58b28e0"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\compose.yaml": {
+    "mtime": 1755834993.6981795,
+    "hash": "969af3458069575ba7a0af85d8e681a4"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\README.Docker.md": {
+    "mtime": 1755482495.0602357,
+    "hash": "9aa1c2b0305415fa3572479b60bb72ae"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\README.md": {
+    "mtime": 1754798831.1341796,
+    "hash": "ffafca22ba72f8549159a5c71e7d7308"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\notion_mcp\\config.yaml": {
+    "mtime": 1776480207.4606612,
+    "hash": "31dc1bb2d433ca269377396520a79491"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\notion_mcp\\requirements.txt": {
+    "mtime": 1776480207.4716713,
+    "hash": "7effdf8b1c1b6f1858f8f6bb3911507d"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\0dae454f-4a71-486b-ac21-3f01f753ebec-pdf-1758392231272.pdf": {
+    "mtime": 1758392232.75957,
+    "hash": "8b747aff4e20f410d2d08e6e7d400599"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\1372f06f-61b2-4f29-844a-899899a855ee-pdf-1752243171392.pdf": {
+    "mtime": 1752243174.9229047,
+    "hash": "15f7a337c9d7ddf9f6fd5f8e2199d8e4"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\182245a5-3ee9-47ff-8324-ebcb5ee85cbf-pdf-1758436128108.pdf": {
+    "mtime": 1758436129.5944073,
+    "hash": "3e01c15dd0fb9b50f1c80c8ff3f8aa5a"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\20d3fb9a-8f59-4ff3-83bc-b3186044df77-pdf-1758388600223.pdf": {
+    "mtime": 1758388601.6298623,
+    "hash": "d2e870d8bc497adcbcfee13316bf8d1b"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\353b4e22-2ee2-4325-b677-86db33983968-pdf-1758436361676.pdf": {
+    "mtime": 1758436363.1431696,
+    "hash": "ea31a9d37ca34903804509ddb2728d24"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\37211473-f303-4186-986a-e36ebe9d4054-pdf-1758390436940.pdf": {
+    "mtime": 1758390438.9596007,
+    "hash": "9cdb4e96f1176e5c6ded52ca4b39f960"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\39a4356d-5960-444b-a736-c36c55165726-pdf-1758392132663.pdf": {
+    "mtime": 1758392134.1392865,
+    "hash": "f129abdddd46c4399e9d6c6fa889f232"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\3ea43502-83ca-4d90-8688-56d7bc92c48c-pdf-1752247090838.pdf": {
+    "mtime": 1752247094.8933184,
+    "hash": "3f2bdaa764e80d510a766990ffc18075"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\3ec73eac-4010-4f57-9d95-5f042228866c-pdf-1758436628996.pdf": {
+    "mtime": 1758436630.456115,
+    "hash": "edf03c44a2a6192c37f3fe1243715ac5"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\49c10425-3cfd-4b6b-90fc-5dabbd954dea-pdf-1752289794984.pdf": {
+    "mtime": 1752289797.151702,
+    "hash": "72f7346552ba7768d61d5f04b91602c6"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\4fae1ecd-622b-4255-8d0c-01e1240ff7f9-pdf-1758391761939.pdf": {
+    "mtime": 1758391763.405308,
+    "hash": "9697238a5879dadf524cd44391f963aa"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\5123e8e6-c5fc-46fb-aa6c-b5d996e7c036-pdf-1758436501156.pdf": {
+    "mtime": 1758436502.6261456,
+    "hash": "010be994f59efcca7472765088ad0401"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\5c0a1145-a740-441b-b9a6-77a46456aedc-pdf-1752289979539.pdf": {
+    "mtime": 1752289981.5618417,
+    "hash": "dc8815f3ad8cb1a8778ca7cd22df55dd"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\5f238619-7756-493c-9779-9a84d74bc3ad-pdf-1776452153915.pdf": {
+    "mtime": 1776452156.054286,
+    "hash": "b4282c85b8d1a8886c6ec2f657d6ff63"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\60abdd6b-e3ba-400a-8997-7a5ff0c3e439-pdf-1752289324232.pdf": {
+    "mtime": 1752289327.8154256,
+    "hash": "20cd92ee54266ac9c8b0f4b277f666ad"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\88a8a4b4-b243-4be8-b498-f87875653610-pdf-1752248485464.pdf": {
+    "mtime": 1752248489.316492,
+    "hash": "d52cf20107f208ab899dc13d0f0fac25"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\91e131a6-3651-48b8-8132-34879fe0a1d0-pdf-1776454514340.pdf": {
+    "mtime": 1776454515.986694,
+    "hash": "5da90638dade97a4987c53abee9b329d"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\93f957c5-8f6b-4905-aa15-be150edc2e07-pdf-1752249682372.pdf": {
+    "mtime": 1752249686.11499,
+    "hash": "5317fe0d92d1f804b1a78e9abd55c693"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\94155990-30e1-4c14-b860-f074d90a44c6-pdf-1758391565924.pdf": {
+    "mtime": 1758391567.8684976,
+    "hash": "da86aaf1530fa23c282f23e92fd3f898"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\a63b2a68-79a6-423c-a434-f0edc4cc62f6-pdf-1775928566110.pdf": {
+    "mtime": 1775928568.1727226,
+    "hash": "56fb127592f2f24758b3f413eb0cfa20"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\a79ca590-6ad5-431a-950c-3dc4d5609a34-pdf-1758427866769.pdf": {
+    "mtime": 1758427868.2237105,
+    "hash": "b90b8f8b470c2992d41cf405b7b116ef"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\a86090bf-d51f-4fda-8560-350991475b62-pdf-1752289502597.pdf": {
+    "mtime": 1752289504.5596218,
+    "hash": "0353832447887d951a5fadcf1e46e730"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\c288bde5-0d26-4c12-865f-a2d3878816f1-agentic-ai-report.pdf": {
+    "mtime": 1752240906.2497182,
+    "hash": "6dbfd846c1c0e256e864dd37c4513958"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\c44ece02-28b7-4ee8-a032-771d18f1a46d-pdf-1758427582935.pdf": {
+    "mtime": 1758427585.780373,
+    "hash": "30b3941f81b243301d08b1f52a254463"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\ca66d1f3-bb94-47d6-9eba-2b2057f6526b-pdf-1752288624743.pdf": {
+    "mtime": 1752288629.7963994,
+    "hash": "5dc187dc04b2a78c1bccfb9ff5105510"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\cc46cf72-a858-4635-96e2-94219b4ef8f3-pdf-1758436430395.pdf": {
+    "mtime": 1758436431.8306236,
+    "hash": "052a76a7dc2ce013466ec8a938cae9e9"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\d1c55345-1ae6-4b72-a22f-e3e47dccfc97-pdf-1758385074798.pdf": {
+    "mtime": 1758385077.221838,
+    "hash": "b3fb1e3787541b2b1de7b6b562925bc5"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\d9d81a03-50f5-4cdf-97b8-ca8ed64933da-pdf-1758435651353.pdf": {
+    "mtime": 1758435653.2366965,
+    "hash": "ce8c16c206b30652b1ed5aac7538b34c"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\e53f6d7b-9e4a-4395-8b33-5d73c81e2985-pdf-1758390461305.pdf": {
+    "mtime": 1758390463.2991538,
+    "hash": "5d4954a55fae9f4f099cd89cfaf34762"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\eb11d5db-5efe-431d-9097-925f5d82fb0c-pdf-1753802529871.pdf": {
+    "mtime": 1753802532.305153,
+    "hash": "2c2028fd343bb9230efa478ac9e81890"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\ebc20dcb-e98c-4542-a108-f72d629a3642-pdf-1752242914198.pdf": {
+    "mtime": 1752242918.499334,
+    "hash": "47ce48b28ea99387ebe1b430efd1f572"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\fd558905-2a29-45a4-a3d1-2b595f979ea8-pdf-1775929052944.pdf": {
+    "mtime": 1775929054.4706202,
+    "hash": "ab8781c7a3c4124f79a3d869b2f77c6d"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\doc_parser\\html-pdf-convertor\\public\\uploads\\fd92d3d8-066b-4feb-bd4b-0b3feecece89-pdf-1775927927751.pdf": {
+    "mtime": 1775927929.9795911,
+    "hash": "f02dcbbed113875f9ab0e0e647876486"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\public\\file.svg": {
+    "mtime": 1754762370.8184617,
+    "hash": "d09f95206c3fa0bb9bd9fefabfd0ea71"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\public\\globe.svg": {
+    "mtime": 1754762370.8361876,
+    "hash": "2aaafa6a49b6563925fe440891e32717"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\public\\next.svg": {
+    "mtime": 1754762370.8428133,
+    "hash": "8e061864f388b47f33a1c3780831193e"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\public\\vercel.svg": {
+    "mtime": 1754762370.8498142,
+    "hash": "c0af2f507b369b085b35ef4bbe3bcf1e"
+  },
+  "Z:\\projects\\FINAL_YEAR_MICROSERVICES\\Final_project\\frontend\\public\\window.svg": {
+    "mtime": 1754762370.8528135,
+    "hash": "a2760511c65806022ad20adf74370ff3"
+  }
+}

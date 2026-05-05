@@ -1,0 +1,21 @@
+# Notion MCP Connector Configuration
+connector: notion
+type: MCP
+
+api:
+  base_url: "https://api.notion.com"
+  version_header: "2022-06-28"   # Notion-Version header
+  auth_scheme: Bearer
+
+credentials:
+  notion_token: ""   # Integration token — notion.com > Settings > Integrations (starts with ntn_ or secret_)
+
+  # Overrides (optional)
+  notion_base_url: "https://api.notion.com"
+  notion_version: "2022-06-28"
+
+mcp_server:
+  transport: stdio
+  command: python
+  args:
+    - server.py

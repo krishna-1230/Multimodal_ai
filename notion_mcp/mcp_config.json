@@ -1,0 +1,45 @@
+{
+  "description": "Notion MCP Server — plug this block into your MCP client config.",
+  "mcpServers": {
+    "notion": {
+      "command": "python",
+      "args": ["server.py"],
+      "cwd": "/absolute/path/to/notion",
+      "env": {
+        "NOTION_TOKEN": "ntn_your_integration_token_here"
+      }
+    }
+  },
+  "notes": {
+    "port": 8001,
+    "port_override": "Set MCP_PORT env var to use a different port.",
+    "setup_steps": [
+      "1. Go to https://www.notion.so/my-integrations",
+      "2. Create a new internal integration",
+      "3. Copy the token (starts with ntn_)",
+      "4. Share target pages/databases with the integration via ... > Connections"
+    ],
+    "tools": [
+      "ping",
+      "get_current_user",
+      "get_user",
+      "list_users",
+      "search",
+      "get_page",
+      "create_page",
+      "update_page",
+      "get_page_property",
+      "get_block",
+      "get_block_children",
+      "append_block_children",
+      "update_block",
+      "delete_block",
+      "get_database",
+      "query_database",
+      "create_database",
+      "update_database",
+      "get_comments",
+      "create_comment"
+    ]
+  }
+}

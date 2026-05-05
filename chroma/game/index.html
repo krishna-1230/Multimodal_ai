@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrowserOS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Boot Screen -->
+    <div id="boot-screen">
+        <div class="boot-logo">
+            <div class="boot-spinner"></div>
+            <p>BrowserOS</p>
+        </div>
+    </div>
+
+    <!-- Login Screen -->
+    <div id="login-screen" class="hidden">
+        <div class="login-box">
+            <div class="login-avatar">👤</div>
+            <h2>User</h2>
+            <button id="login-btn" class="login-btn">Click to Login</button>
+        </div>
+    </div>
+
+    <!-- Desktop -->
+    <div id="desktop" class="hidden">
+        <!-- Desktop Icons -->
+        <div id="desktop-icons">
+            <div class="desktop-icon" data-app="notepad" onclick="OS.openApp('notepad')">
+                <div class="icon notepad-icon">📝</div>
+                <span>Notepad</span>
+            </div>
+            <div class="desktop-icon" data-app="flight-sim" onclick="OS.openApp('flight-sim')">
+                <div class="icon flight-icon">✈️</div>
+                <span>Flight Sim</span>
+            </div>
+            <div class="desktop-icon" data-app="snake" onclick="OS.openApp('snake')">
+                <div class="icon snake-icon">🐍</div>
+                <span>Snake</span>
+            </div>
+            <div class="desktop-icon" data-app="car-game" onclick="OS.openApp('car-game')">
+                <div class="icon car-icon">🏎️</div>
+                <span>Car Game</span>
+            </div>
+            <div class="desktop-icon" data-app="about" onclick="OS.openApp('about')">
+                <div class="icon about-icon">ℹ️</div>
+                <span>About</span>
+            </div>
+        </div>
+
+        <!-- Windows Container -->
+        <div id="windows-container"></div>
+
+        <!-- Start Menu -->
+        <div id="start-menu" class="hidden">
+            <div class="start-menu-content">
+                <div class="start-menu-header">
+                    <span class="start-menu-avatar">👤</span>
+                    <span class="start-menu-user">User</span>
+                </div>
+                <div class="start-menu-apps">
+                    <div class="start-menu-section">
+                        <h3>Games</h3>
+                        <div class="start-menu-item" onclick="OS.openApp('flight-sim'); OS.toggleStartMenu();">
+                            <span class="start-menu-icon">✈️</span> Flight Simulator
+                        </div>
+                        <div class="start-menu-item" onclick="OS.openApp('snake'); OS.toggleStartMenu();">
+                            <span class="start-menu-icon">🐍</span> Snake Game
+                        </div>
+                        <div class="start-menu-item" onclick="OS.openApp('car-game'); OS.toggleStartMenu();">
+                            <span class="start-menu-icon">🏎️</span> Car Game
+                        </div>
+                    </div>
+                    <div class="start-menu-section">
+                        <h3>Apps</h3>
+                        <div class="start-menu-item" onclick="OS.openApp('notepad'); OS.toggleStartMenu();">
+                            <span class="start-menu-icon">📝</span> Notepad
+                        </div>
+                        <div class="start-menu-item" onclick="OS.openApp('about'); OS.toggleStartMenu();">
+                            <span class="start-menu-icon">ℹ️</span> About
+                        </div>
+                    </div>
+                </div>
+                <div class="start-menu-footer">
+                    <div class="start-menu-item shutdown" onclick="OS.shutdown()">
+                        <span class="start-menu-icon">⏻</span> Shutdown
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Taskbar -->
+        <div id="taskbar">
+            <div class="taskbar-left">
+                <button id="start-btn" class="start-btn" onclick="OS.toggleStartMenu()">
+                    <span class="start-logo">🖥️</span>
+                </button>
+                <div id="taskbar-apps"></div>
+            </div>
+            <div class="taskbar-right">
+                <div id="taskbar-clock"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/os.js"></script>
+    <script src="js/notepad.js"></script>
+    <script src="js/flight-sim.js"></script>
+    <script src="js/snake.js"></script>
+    <script src="js/car-game.js"></script>
+</body>
+</html>

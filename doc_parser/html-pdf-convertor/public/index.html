@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML to PDF Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        textarea {
+            width: 100%;
+            height: 300px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: monospace;
+            resize: vertical;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .sample-button {
+            background-color: #2196F3;
+            margin-left: 10px;
+        }
+        .sample-button:hover {
+            background-color: #0b7dda;
+        }
+        .clear-button {
+            background-color: #f44336;
+            margin-left: 10px;
+        }
+        .clear-button:hover {
+            background-color: #d32f2f;
+        }
+        .upload-button {
+            background-color: #FF9800;
+        }
+        .upload-button:hover {
+            background-color: #F57C00;
+        }
+        .local-button {
+            background-color: #009688;
+        }
+        .local-button:hover {
+            background-color: #00796B;
+        }
+        .options {
+            margin-bottom: 20px;
+        }
+        .filename-input {
+            padding: 8px;
+            margin-right: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 200px;
+        }
+        .result-section {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            display: none;
+        }
+        .result-section h3 {
+            margin-top: 0;
+        }
+        .result-links a {
+            display: block;
+            margin-bottom: 10px;
+            color: #2196F3;
+            text-decoration: none;
+        }
+        .result-links a:hover {
+            text-decoration: underline;
+        }
+        .api-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+        .loading {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .loading-spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 2s linear infinite;
+            margin: 0 auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML to PDF Converter</h1>
+        <p>Enter your HTML content below and choose how you want to convert it.</p>
+        
+        <textarea id="htmlInput" placeholder="Enter your HTML content here..."></textarea>
+        
+        <div class="options">
+            <input type="text" id="fileNameInput" class="filename-input" placeholder="Optional filename (for Drive upload)">
+        </div>
+        
+        <div>
+            <button id="convertBtn">Convert to PDF</button>
+            <button id="localBtn" class="local-button">Convert & Save Locally</button>
+            <button id="uploadBtn" class="upload-button">Convert & Upload to Drive</button>
+            <button id="sampleBtn" class="sample-button">Load Sample HTML</button>
+            <button id="clearBtn" class="clear-button">Clear</button>
+        </div>
+        
+        <div id="loading" class="loading">
+            <div class="loading-spinner"></div>
+            <p>Processing your request...</p>
+        </div>
+        
+        <div id="resultSection" class="result-section">
+            <h3>Conversion Successful</h3>
+            <div id="resultLinks" class="result-links"></div>
+        </div>
+        
+        <a href="/api-docs" class="api-link">API Documentation</a>
+    </div>
+
+    <script>
+        document.getElementById('convertBtn').addEventListener('click', function() {
+            const htmlContent = document.getElementById('htmlInput').value;
+            
+            if (!htmlContent.trim()) {
+                alert('Please enter HTML content');
+                return;
+            }
+            
+            // Create a form for submission
+            const form = document.createElement('form');
+            form.method = 'POST';
+            form.action = '/convert';
+            form.target = '_blank';
+            
+            // Create hidden input for HTML content
+            const input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = 'html';
+            input.value = htmlContent;
+            
+            // Append to form and submit
+            form.appendChild(input);
+            document.body.appendChild(form);
+            form.submit();
+            document.body.removeChild(form);
+        });
+        
+        document.getElementById('localBtn').addEventListener('click', async function() {
+            const htmlContent = document.getElementById('htmlInput').value;
+            const fileName = document.getElementById('fileNameInput').value;
+            
+            if (!htmlContent.trim()) {
+                alert('Please enter HTML content');
+                return;
+            }
+            
+            // Show loading indicator
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('resultSection').style.display = 'none';
+            
+            try {
+                const response = await fetch('/api/convert-local', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        html: htmlContent,
+                        fileName: fileName || undefined
+                    })
+                });
+                
+                const result = await response.json();
+                
+                // Hide loading indicator
+                document.getElementById('loading').style.display = 'none';
+                
+                if (result.success) {
+                    // Show result section
+                    const resultSection = document.getElementById('resultSection');
+                    resultSection.style.display = 'block';
+                    
+                    // Add links
+                    const resultLinks = document.getElementById('resultLinks');
+                    resultLinks.innerHTML = `
+                        <a href="${result.file.downloadUrl}" target="_blank">Download PDF</a>
+                        <p>File name: ${result.file.name}</p>
+                        <p><strong>Direct download URL (for n8n):</strong><br> 
+                        <code>${result.file.downloadUrl}</code></p>
+                    `;
+                } else {
+                    alert('Error: ' + (result.message || 'Unknown error'));
+                }
+            } catch (error) {
+                // Hide loading indicator
+                document.getElementById('loading').style.display = 'none';
+                alert('Error: ' + error.message);
+            }
+        });
+
+        document.getElementById('uploadBtn').addEventListener('click', async function() {
+            const htmlContent = document.getElementById('htmlInput').value;
+            const fileName = document.getElementById('fileNameInput').value;
+            
+            if (!htmlContent.trim()) {
+                alert('Please enter HTML content');
+                return;
+            }
+            
+            // Show loading indicator
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('resultSection').style.display = 'none';
+            
+            try {
+                const response = await fetch('/api/convert-and-upload', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        html: htmlContent,
+                        fileName: fileName || undefined
+                    })
+                });
+                
+                const result = await response.json();
+                
+                // Hide loading indicator
+                document.getElementById('loading').style.display = 'none';
+                
+                if (result.success) {
+                    // Show result section
+                    const resultSection = document.getElementById('resultSection');
+                    resultSection.style.display = 'block';
+                    
+                    // Add links
+                    const resultLinks = document.getElementById('resultLinks');
+                    resultLinks.innerHTML = `
+                        <a href="${result.file.viewLink}" target="_blank">View PDF in Google Drive</a>
+                        <a href="${result.file.downloadLink}" target="_blank">Download PDF</a>
+                        <p>File name: ${result.file.name}</p>
+                    `;
+                } else {
+                    alert('Error: ' + (result.message || 'Unknown error'));
+                }
+            } catch (error) {
+                // Hide loading indicator
+                document.getElementById('loading').style.display = 'none';
+                alert('Error: ' + error.message);
+            }
+        });
+
+        document.getElementById('sampleBtn').addEventListener('click', function() {
+            const sampleHtml = `<!DOCTYPE html>
+<html>
+<head>
+    <title>Research Report: Agentic AI Examples and Use Cases</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+        h1, h2, h3 { color: #333; }
+        .report-section { background-color: #f4f4f4; padding: 20px; font-size: 16px; line-height: 1.6; color: #333; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="report-section">
+        <h2>Introduction to Agentic AI</h2>
+        <p>Agentic AI represents an evolution in artificial intelligence, moving beyond reactive systems to proactive and autonomous entities capable of understanding context, planning, and executing complex tasks. Unlike traditional AI, which typically performs predefined functions, agentic AI can self-organize, delegate, and orchestrate various AI capabilities to achieve higher-level goals. This report explores several real-world examples and use cases where agentic AI is transforming industries and enhancing operational efficiency, demonstrating its potential to handle intricate processes with unprecedented autonomy and precision.</p>
+        <hr>
+        <p>The core strength of agentic AI lies in its ability to manage and automate multi-step workflows, acting as an intelligent orchestrator rather than a mere tool. This comprehensive analysis will delve into specific applications ranging from advanced customer service to scientific discovery and complex supply chain management, highlighting how agentic AI is setting new benchmarks for intelligent automation and problem-solving.</p>
+    </div>
+
+    <div class="report-section">
+        <h2>Key Real-World Agentic AI Examples and Use Cases</h2>
+
+        <h3>Enhanced Customer Service</h3>
+        <p>Agentic AI offers a significant leap forward in customer service, providing a proactive and personalized experience that surpasses the capabilities of human employees or traditional AI systems. For instance, a utility company can deploy agentic AI to identify customers likely to receive unusually high bills. This system can then proactively contact these customers, provide specific and accurate information explaining the high charges, and suggest personalized strategies for reducing future costs. This level of foresight and tailored interaction significantly improves customer satisfaction and operational efficiency.</p>
+        <hr>
+
+        <h3>Multimedia Creation and Orchestration</h3>
+        <p>While generative AI can produce individual pieces of content like text, images, or video, agentic AI elevates multimedia creation to a new level by acting as an orchestrator. When tasked with developing a comprehensive multimedia report, an agentic AI system can autonomously delegate subtasks to other specialized AI systems. This includes conducting research, generating textual content, selecting appropriate images, and designing the overall layout. The result is a more refined and complete final product, demonstrating agentic AI's capacity to integrate and manage diverse AI functionalities to achieve complex creative goals, rather than merely performing a single function.</p>
+    </div>
+</body>
+</html>`;
+            
+            document.getElementById('htmlInput').value = sampleHtml;
+        });
+
+        document.getElementById('clearBtn').addEventListener('click', function() {
+            document.getElementById('htmlInput').value = '';
+            document.getElementById('fileNameInput').value = '';
+            document.getElementById('resultSection').style.display = 'none';
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,8 @@
+flask>=2.0.0
+sentence-transformers>=2.2.2
+chromadb>=0.3.21
+torch>=1.12.0
+numpy>=1.22.0
+hnswlib>=0.7.0
+prometheus_client>=0.14.1
+networkx>=2.6
