@@ -1,4 +1,4 @@
-# Final Year Microservices Project
+# Multimodal AI Project
 
 A comprehensive microservices architecture project featuring an AI-powered chat platform with RAG (Retrieval-Augmented Generation) capabilities, document processing, and Notion integration.
 
